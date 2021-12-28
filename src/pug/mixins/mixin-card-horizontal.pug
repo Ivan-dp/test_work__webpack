@@ -1,0 +1,7 @@
+mixin mixin-card-horizontal(classname, description, img, title)
+    div(class= "card-horizontal-" + classname)
+        div(class= "card-horizontal-" + classname + "__description")
+            h3(class= "card-horizontal-" + classname + "__title")= title
+            p= description 
+        div(class= "card-horizontal-" + classname + "__image")
+            img(src= img)

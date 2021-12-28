@@ -1,0 +1,150 @@
+footer {
+    width: 100%;
+    height: 535px;
+    background: #5B75B1;
+    position: relative;
+}
+
+.footer {
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    justify-content: space-between;
+    &__left {
+        width: 522px;
+        border-right: 1px solid #ffffff;
+        padding-right: 50px;
+    }
+    &__right {
+        width: 522px;
+        padding-left: 50px;
+    }
+    &__list {
+        margin-top: 12px;
+        list-style-type: none;
+        @include Nivea(400, 14px, 17px);
+        text-decoration-line: underline;
+        color: #FFFFFF;
+        & li {
+            margin-bottom: 12px;
+            cursor: pointer;
+            &:last-child {
+                margin-bottom: 0;
+            }
+        }
+    }
+    &__news {
+        width: 472px;
+        border-bottom: 1px solid #ffffff;
+        padding-bottom: 44px;
+        & h3 {
+            margin-bottom: 15px;
+        }
+    }
+    &__nav {
+        width: 472px;
+        padding-top: 36px;
+        & a {
+            text-decoration: none;
+            @include Nivea(400, 14px, 17px);
+            color: #ffffff;
+            text-decoration-line: underline;
+            margin-bottom: 12px;
+            display: inline-block;
+        }
+        & .footer-title {
+            margin-bottom: 15px;
+        }
+        & span {
+            width: 1px;
+            color: #ffffff;
+            margin: 0 5px 0 10px;
+        }
+    }
+    &__subscribe {
+        border-bottom: 1px solid #ffffff;
+        padding-bottom: 40px;
+        width: 472px;
+    }
+    &__subscribe-list {
+        @include Nivea(400, 14px, 17px);
+        color: #ffffff;
+        list-style-type: none;
+        margin-top: 15px;
+        width: 472px;
+        & li {
+            margin-bottom: 12px;
+        } &:last-child {
+            margin-bottom: 0;
+        }
+    }
+    &__subscribe-input {
+        width: 300px;
+        height: 46px;
+        border-radius: 5px;
+        background: #FFFFFF;
+        color: #919191;
+        @include Nivea(400, 16px, 22px);
+        outline: none;
+        border: none;
+        padding-left: 18px;
+    }
+    &__join {
+        width: 200px;
+        padding-top: 30px;
+        & h3 {
+            margin-bottom: 5px;
+        }
+        & img {
+            margin-right: 10px;
+            cursor: pointer;
+            &:last-child {
+                margin-right: 0;
+            }
+        }
+        
+    }
+}
+
+
+.container {
+    width: 100%;
+    height: 475px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    &__wrapper {
+        height: 370px;
+        // width: 100%;
+        display: flex;
+        justify-content: center;
+        margin-top: 54px;
+        margin-bottom: 50px;
+    }
+}
+
+.copyright {
+    width: 100%;
+    height: 60px;
+    background: #06369D;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    &__wrapper {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        & p {
+            // display: block;
+            // position: absolute;
+            @include Nivea(400, 14px, 17px);
+            color: #FFFFFF;
+            opacity: 0.5;
+        }
+        & img {
+            display: block;
+        }
+    }
+}

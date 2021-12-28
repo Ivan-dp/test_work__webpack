@@ -1,0 +1,31 @@
+.cream {
+    padding-top: 73px;
+    display: flex;
+    justify-content: center;
+    &__title {
+        width: 610px;
+        margin-bottom: 50px;
+    }
+    &__wrapper {
+        align-items: center;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+    }
+    &__image {
+        margin-top: 24px;
+    }
+    &__h3 {
+        margin-top: 20px;
+        width: 713px;
+        height: 58px;
+    }
+}
+
+.advantages-cream {
+    margin-top: 74px;
+}
+
+.buy-button_filled {
+    margin-top: 74px;
+}

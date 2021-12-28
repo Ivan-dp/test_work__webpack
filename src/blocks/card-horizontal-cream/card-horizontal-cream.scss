@@ -1,0 +1,28 @@
+.card-horizontal-cream {
+    display: flex;
+    justify-content: space-between;
+    width: 870px;
+    height: 290px;
+    position: relative;
+    &__description {
+        width: 405px;
+        height: 100%;
+        & p {
+            @include Nivea(400, 18px, 26px);
+            color: #0032A0;
+            margin-top: 71px;
+        }
+    }
+    &__image {
+        height: 250px;
+        width: 405px;
+        background: linear-gradient(180deg, #E61C8A 0%, #FFBFE1 100%);
+        position: relative;
+        display: flex;
+        justify-content:center;
+        & img {
+            position: absolute;
+            top: 38px;
+        }
+    }
+}

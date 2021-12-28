@@ -1,0 +1,27 @@
+.bottom {
+    width: 100%;
+    height: 52px;
+    display: flex;
+    justify-content: center;
+    &_wrapper {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        & ul {
+            display: flex;
+            text-decoration: none;
+            list-style-type: none;
+            & li {
+                margin: 0 41px;
+                color: #0032A0;
+                @include Nivea(normal, 14px, 17px);
+                // &:first_child {
+                //     margin-left: 41px;
+                // }
+                // &:last_child {
+                //     margin-right: 41px;
+                // }
+            }
+        }
+    }
+}

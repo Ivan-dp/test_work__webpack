@@ -1,0 +1,96 @@
+.hero {
+    width: 100%;
+    height: 650px;
+    background-image: url('/src/img/hero_bcg.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    &__card {
+        position: absolute;
+        right: 0px;
+        top: 200px;
+        width: 500px;
+        height: 275px;
+        background-color: white;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-around;
+        & h1 {
+            @include Nivea-Bold(800, 48px, 58px);
+            color: #0032A0;
+            text-transform: uppercase;
+            text-align: center;
+        }
+        & p {
+            @include Nivea(400, 18px, 22px);
+            color: #0032A0;
+        }
+    }
+    &__cream {
+        transform: rotate(-15deg);
+        background-image: url('/src/img/circle.svg');
+        width: 162px;
+        height: 162px;
+        left: 150px;
+        top: 107px;
+        &::after {
+            content: url('/src/img/cream.png');
+            transform: rotate(15deg);
+        }
+        &::before {
+            width: 156px;
+            height: 156px;
+        }
+        
+    }
+    &__gel {
+        transform: rotate(45deg);
+        background-image: url('/src/img/circle_2.svg');
+        width: 183px;
+        height: 183px;
+        left: 120px;
+        top: 323px;
+        &::after {
+            content: url('/src/img/gel.png');
+            transform: rotate(-45deg);
+            right: 19px;
+            bottom: -34px;
+        }
+        &::before {
+            width: 177px;
+            height: 177px;
+        }
+    }
+    &__cream, &__gel {
+        position: absolute;
+        border-radius: 50%;
+        box-shadow: inset 0px -2px 2px rgba(0, 0, 0, 0.1), inset 0px 2px 1px rgba(243, 245, 252, 0.75);
+        &::before {
+            content: "";
+            display: block;
+            position: absolute;
+            top: 3px;
+            left: 3px;
+            border-radius: 50%;
+            background: radial-gradient(50% 50% at 50% 50%, #A7E7FF 0%, rgba(191, 232, 248, 0.5) 100%);
+            opacity: 0.75;
+            transform: rotate(-15deg);
+        }
+        &::after {
+            display: block;
+            position: absolute;
+            background-size: cover;
+            background-position: center;
+        }
+        
+    }
+    
+}
+
+
+
+

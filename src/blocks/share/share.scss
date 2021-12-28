@@ -1,0 +1,28 @@
+.share {
+    display: flex;
+    justify-content: center;
+    margin-top: 110px;
+    margin-bottom: 50px;
+    &__wrapper {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+    }
+    &__icons {
+        & img {
+            margin: 12px 10px 20px 10px; 
+        }
+    }
+    &__politic {
+        display: flex;
+        & img {
+            margin-right: 6px;
+        }
+        & p {
+            @include Nivea(400, 11px, 22px);
+            color: #0032A0;
+
+        }
+    }
+}

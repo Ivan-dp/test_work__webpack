@@ -1,0 +1,16 @@
+.buy-button_filled {
+    width: 147px;
+    height: 56px;
+    background: #0032A0;
+    border-radius: 28px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    &::after {
+        content: "купить";
+        text-transform: uppercase;
+        color: #ffffff;
+        @include Nivea-Bold(800, 16px, 22px);
+    }
+}

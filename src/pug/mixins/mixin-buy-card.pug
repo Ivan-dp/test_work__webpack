@@ -1,0 +1,13 @@
+mixin mixin-buy-card(classname, img, title)
+    div.buy-card(class= "buy-card-" + classname)
+        div.buy-card__image
+            img(src= img)
+        .buy-card__title
+            h3.h3-title= title 
+            .buy-card__buttons 
+                .buy-card__ozon
+                    img(src="/src/img/ozon.svg")
+                    .buy-button
+                .buy-card__wild
+                    img(src="/src/img/wild.png")
+                    .buy-button

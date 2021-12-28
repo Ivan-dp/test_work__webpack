@@ -1,0 +1,37 @@
+@font-face {
+    font-family: "Nivea";
+    src: url("/src/fonts/NIVEA Brand Type TT.eot");
+    src: url("/src/fonts/NIVEA Brand Type TT.woff") format("woff"),
+      url("/src/fonts/NIVEA Brand Type TT.ttf") format("truetype"),
+      url("/src/fonts/NIVEA Brand Type TT.svg#NIVEABrandTypeTT")
+        format("svg");
+    font-style: normal;
+    font-weight: 700;
+  }
+
+  @font-face {
+    font-family: "Nivea-Bold";
+    src: url("/src/fonts/NIVEA Brand Type TT Bold.eot");
+    src: url("/src/fonts/NIVEA Brand Type TT Bold.woff") format("woff"),
+      url("/src/fonts/NIVEA Brand Type TT Bold.ttf") format("truetype"),
+      url("/src/fonts/NIVEA Brand Type TT Bold.svg#NIVEABrandTypeTT-Bold")
+        format("svg");
+    font-style: normal;
+    font-weight: 700;
+  }
+
+@mixin Nivea($weight, $size, $height) {
+    font-family: "Nivea", sans-serif;
+    font-style: normal;
+    font-weight: $weight;
+    font-size: $size;
+    line-height: $height;
+}
+
+@mixin Nivea-Bold($weight, $size, $height) {
+    font-family: "Nivea Bold", sans-serif;
+    font-style: normal;
+    font-weight: $weight;
+    font-size: $size;
+    line-height: $height;
+}
