@@ -9,23 +9,26 @@
     display: flex;
     justify-content: center;
     &__card {
+        // padding-top: 30px;
         position: absolute;
-        right: 0px;
-        top: 200px;
+        right: -59px;
+        top: 188px;
         width: 500px;
         height: 275px;
         background-color: white;
         display: flex;
         flex-direction: column;
         align-items: center;
-        justify-content: space-around;
+        // justify-content: space-around;
         & h1 {
             @include Nivea-Bold(800, 48px, 58px);
             color: #0032A0;
             text-transform: uppercase;
             text-align: center;
+            margin-top: 30px;
         }
         & p {
+            margin-top: 12px;
             @include Nivea(400, 18px, 22px);
             color: #0032A0;
         }
@@ -35,11 +38,13 @@
         background-image: url('/src/img/circle.svg');
         width: 162px;
         height: 162px;
-        left: 150px;
-        top: 107px;
+        left: 127px;
+        top: 108px;
         &::after {
             content: url('/src/img/cream.png');
             transform: rotate(15deg);
+            top: 3px;
+            left: -3px;
         }
         &::before {
             width: 156px;
@@ -52,13 +57,13 @@
         background-image: url('/src/img/circle_2.svg');
         width: 183px;
         height: 183px;
-        left: 120px;
+        left: 102px;
         top: 323px;
         &::after {
             content: url('/src/img/gel.png');
             transform: rotate(-45deg);
             right: 19px;
-            bottom: -34px;
+            bottom: -29px;
         }
         &::before {
             width: 177px;

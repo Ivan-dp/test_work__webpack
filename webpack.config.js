@@ -14,7 +14,7 @@ module.exports = {
   },
   plugins: [
     new HtmlWebpackPlugin({
-      filename: 'html/index.html',
+      filename: 'index.html',
       template: './src/pages/index/index.pug',
       chunks: ['index']
     }),
@@ -43,21 +43,36 @@ module.exports = {
       },
       //img
       {
+        // test: /\.(png|svg|jpg|jpeg|gif)$/i,
+
+        // type: 'asset/resource'
         test: /\.(png|jpe?g|svg|gif)$/,
         exclude: /fonts/,
-        type: 'asset/resource',
+        type: 'asset',
+        // dependency: { not: ['url'] },
         generator: {
           filename: "img/[name][ext]"
         }
         // use: [
         //   {
+        //       loader: 'url-loader',
+        //       // Упаковать изображения размером менее 8K в файлы js в виде base64
+        //       options: {
+        //         name: "img/[name].[ext]"
+        //         // limit: 8192
+        //       }
+        //   }
+        // ]
+        // use: [
+        //   {
         //     loader: "file-loader",
         //     options: {
-        //       name: "img/[contenthash].[ext]",
+        //       name: "img/[name].[ext]",
         //       publicPath: '/dist'
         //     },
         //   },
         // ],
+
       },
       //fonts
       {

@@ -1,10 +1,10 @@
 .gel {
-    padding-top: 50px;
+    padding-top: 51px;
     display: flex;
     justify-content: center;
     &__title {
         width: 610px;
-        margin-bottom: 50px;
+        margin-bottom: 52px;
     }
     &__wrapper {
         align-items: center;
@@ -20,12 +20,12 @@
         width: 713px;
         height: 58px;
     }
+    & .buy-button_filled {
+        margin-top: 118px;
+    }
 }
 
 .advantages-gel {
-    margin-top: 74px;
+    margin-top: 70px;
 }
 
-.buy-button_filled {
-    margin-top: 74px;
-}

@@ -4,10 +4,10 @@
     align-items: center;
     &__list {
         list-style-type: none;
-        margin-top: 22px;
+        margin-top: 23px;
         & li {
             display: flex;
-            margin-bottom: 24px;
+            margin-bottom: 20px;
             color: #06369D;
             @include Nivea(400, 18px, 24px);
             align-items: center;
