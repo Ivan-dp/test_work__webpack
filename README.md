@@ -7,7 +7,7 @@
 
 ## Быстрый старт
 
-#### `npm i` – установить зависимости проекта
+#### `npm i --legacy-peer-deps` – установить зависимости проекта
 
 #### `npm run start` – запуск devServer на http://localhost:8080/
 
