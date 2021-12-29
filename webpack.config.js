@@ -1,10 +1,19 @@
 const path = require('path');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 const { CleanWebpackPlugin } = require('clean-webpack-plugin');
+const webpack = require('webpack');
 
 
 module.exports = {
   mode: 'development',
+  devServer: {
+    historyApiFallback: true,
+    // contentBase: path.resolve(__dirname, 'dist'),
+    open: true,
+    compress: true,
+    hot: true,
+    port: 8080
+  },
   entry: {
     index: './src/pages/index/index.js'
   },
@@ -18,7 +27,8 @@ module.exports = {
       template: './src/pages/index/index.pug',
       chunks: ['index']
     }),
-    new CleanWebpackPlugin()    
+    new CleanWebpackPlugin(),    
+    new webpack.HotModuleReplacementPlugin()
   ],
   stats: {
     children: true,
@@ -44,9 +54,10 @@ module.exports = {
       //img
       {
         // test: /\.(png|svg|jpg|jpeg|gif)$/i,
-
+        
         // type: 'asset/resource'
-        test: /\.(png|jpe?g|svg|gif)$/,
+        // test: /\.(png|jpe?g|svg|gif)$/,
+        test: /\.(png|svg|jpg|jpeg|gif)$/i,
         exclude: /fonts/,
         type: 'asset',
         // dependency: { not: ['url'] },
@@ -54,37 +65,37 @@ module.exports = {
           filename: "img/[name][ext]"
         }
         // use: [
-        //   {
-        //       loader: 'url-loader',
-        //       // Упаковать изображения размером менее 8K в файлы js в виде base64
-        //       options: {
-        //         name: "img/[name].[ext]"
-        //         // limit: 8192
-        //       }
-        //   }
-        // ]
-        // use: [
-        //   {
-        //     loader: "file-loader",
-        //     options: {
-        //       name: "img/[name].[ext]",
-        //       publicPath: '/dist'
-        //     },
-        //   },
-        // ],
-
-      },
-      //fonts
-      {
-        test: /\.(woff(2)?|ttf|otf|eot|svg)$/,
-        exclude: /img/,
-        type: 'asset/inline'
-        // loader: "file-loader"
-        // options: {
-        //   filename: "fonts/[name].[contenthash].[ext]",
-        //   publicPath: '/dist'
-        // }
-      }
-    ]
-  }
-};
+          //   {
+            //       loader: 'url-loader',
+            //       // Упаковать изображения размером менее 8K в файлы js в виде base64
+            //       options: {
+              //         name: "img/[name].[ext]"
+              //         // limit: 8192
+              //       }
+              //   }
+              // ]
+              // use: [
+                //   {
+                  //     loader: "file-loader",
+                  //     options: {
+                    //       name: "img/[name].[ext]",
+                    //       publicPath: '/dist'
+                    //     },
+                    //   },
+                    // ],
+                    
+                  },
+                  //fonts
+                  {
+                    test: /\.(woff(2)?|ttf|otf|eot|svg)$/,
+                    exclude: /img/,
+                    type: 'asset/inline'
+                    // loader: "file-loader"
+                    // options: {
+                      //   filename: "fonts/[name].[contenthash].[ext]",
+                      //   publicPath: '/dist'
+                      // }
+                    }
+                  ]
+                }
+              };

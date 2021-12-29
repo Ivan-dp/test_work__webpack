@@ -1,8 +1,7 @@
 .top
     .wrapper.wrapper_top
         .top__logo
-            svg.nivea-wordmark
-                use(xlink:href='/src/img/vectors.svg#logo')
+            img.nivea-wordmark(src=require('/src/img/logo.svg'))
         .top__nav
             ul.top__nav-list
                 li.top__nav-item Продукты
@@ -11,11 +10,8 @@
                 li.top__nav-item Мир nivea
         .top__auth
             a.auth__search(href='#')
-                svg.icon
-                    use(xlink:href='/src/img/vectors.svg#search')
+                img.icon(src=require('/src/img/search.svg'))
             a.auth__user(href='#')
-                svg.icon
-                    use(xlink:href='/src/img/vectors.svg#user')
+                img.icon(src=require('/src/img/user.svg'))
             a.auth__settings(href='#')
-                svg.icon
-                    use(xlink:href='/src/img/vectors.svg#settings')
+                img.icon(src=require('/src/img/settings.svg'))

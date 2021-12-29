@@ -4,8 +4,7 @@
         include ../card-horizontal-cream/card-horizontal-cream
         include ../card-info-cream/card-info-cream
         .cream__image
-            img(src="/src/img/cream_big.png", alt="cream_big")
-            //- require (../../img/cream_big.png)
+            img(src=require("/src/img/cream_big.png"), alt="cream_big")
         .cream__h3
             h3.h3-title Крем Care от Nivea увлажняет глубокие слои кожи и сохраняет ее внутри до 24 часов!
         include ../advantages-cream/advantages-cream

@@ -6,8 +6,8 @@ mixin mixin-buy-card(classname, img, title)
             h3.h3-title= title 
             .buy-card__buttons 
                 .buy-card__ozon
-                    img(src="/src/img/ozon.svg")
+                    img(src=require("/src/img/ozon.svg"))
                     .buy-button
                 .buy-card__wild
-                    img(src="/src/img/wild.png")
+                    img(src=require("/src/img/wild.png"))
                     .buy-button
