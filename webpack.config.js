@@ -12,7 +12,7 @@ module.exports = {
     open: true,
     compress: true,
     hot: true,
-    port: 8080
+    port: 8081
   },
   entry: {
     index: './src/pages/index/index.js'
