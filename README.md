@@ -1,6 +1,13 @@
 # Сайт NIVEA
+
 ## Подготовил - Литовченко Иван
+
+## Адрес на gh-pages:
+
+- https://ivan-dp.github.io/test_work__webpack/
+
 ### Технологии:
+
 - PUG
 - SCSS
 - Webpack
@@ -42,3 +49,4 @@
 ├── package.json                                  # Список модулей и прочей информации
 ├── webpack.config.js                             # Конфигурация Webpack.js
 └── README.md                                     # Документация проекта
+```
