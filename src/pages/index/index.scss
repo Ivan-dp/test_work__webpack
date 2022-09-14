@@ -31,9 +31,12 @@
 @import "/src/blocks/share/share.scss";
 @import "/src/blocks/footer/footer.scss";
 
-
 * {
-    margin: 0;
-    padding: 0;
+  margin: 0;
+  padding: 0;
 }
 
+.mCSB_inside > .mCSB_container {
+  margin-right: 0;
+  padding-right: 0;
+}
